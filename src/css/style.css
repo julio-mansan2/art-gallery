@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;500;700;900&family=Outfit:wght@100;300&display=swap');
+
+/* HOME */
+
+.header {
+    background: var(--black) url(../images/desktop/image-hero.jpg) right no-repeat;
+    background-size: contain;
+    padding: 10% 10% 25% 10%;
+    margin-right: 35%;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'Big Shoulders Display', sans-serif;
+    mix-blend-mode: difference;
+    color: var(--white);
+}
+
+.header-intro {
+    position: absolute;
+    top: 30%;
+    right: -30%;
+}
+
+.header-intro p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.125rem;
+    color: var(--gray);
+    margin-bottom: 2.5rem;
+}
+
+.header-intro p span {
+    font-weight: 700;
+    color: var(--black);
+}
+
+.button-location,
+.button-home {
+    display: flex;
+    font-family: 'Big Shoulders Display', sans-serif;
+    text-transform: uppercase;
+    align-items: stretch;
+    transition: 0.3s;
+}
+
+.button-location span,
+.button-home p {
+    padding: 1.25rem 1.875rem;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.button-location img,
+.button-home img {
+    background: var(--brown);
+    padding: 1.25rem 1.875rem;
+    transition: 0.3s;
+}
+
+.button-location:hover span,
+.button-home:hover p {
+    background: var(--brown);
+}
+
+.button-location:hover img,
+.button-home:hover img {
+    background: var(--black);
+}
+
+.main {
+    padding: 12%;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas:
+    'intro exposition exposition'
+    'seat seat people'
+    'seat seat cta';
+    gap: 1.875rem;
+    grid-template-rows: auto auto 1fr;
+}
+
+.grid img {
+    width: 100%;
+    filter: grayscale(100%);
+}
+
+.grid img:hover {
+    filter: saturate(105%);
+    transform: scale(105%);
+    transition: all ease 1s;
+}
+
+.intro {
+    grid-area: intro;
+    color: var(--black);
+    background: var(--white);
+}
+
+.exposition {
+    grid-area: exposition;
+}
+
+.seat {
+    grid-area: seat;
+}
+
+.people {
+    grid-area: people;
+}
+
+.cta {
+    grid-area: cta;
+    color: var(--white);
+    background: var(--black);
+}
+
+.intro, 
+.cta {
+    display: flex;
+    flex-direction: column;
+    padding: 2.1875rem;
+    gap: 1.875rem;
+    transition: 0.3s;
+}
+
+.intro h2, 
+.cta h2 {
+    font: 900 4rem 'Big Shoulders Display', sans-serif;
+    text-transform: uppercase;
+}
+
+.intro:hover {
+    background: var(--black);
+    color: var(--white);
+}
+
+.cta:hover {
+    background: var(--white);
+    color: var(--black);
+}
+
+.intro p, 
+.cta p {
+    font-size: 1.125rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+.footer {
+    background: var(--black);
+    padding: 5% 10%;
+    display: flex;
+    justify-content: space-between;
+    gap: 12.5rem;
+    align-items: center;
+}
+
+.social-medias {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.footer p {
+    color: var(--white);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+}
+
+.social-medias a {
+    font-size: 1.3rem;
+    padding: 5px;
+    background: var(--white);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.social-medias a:hover {
+    background: var(--brown);
+}
+
+/* LOCATION */
+
+.map {
+    position: relative;
+    height: 100%;
+    background: var(--black);
+}
+
+.button-home {
+    position: absolute;
+    left: 5%;
+}
+
+.map .map-img {
+    width: 100%;
+    height: 100%;
+}
+
+.our-location {
+    padding: 7% 10%;
+    background: var(--black);
+    display: flex;
+    justify-content: space-between;
+    gap: 25rem;
+}
+
+.our-location h1 {
+    text-transform: uppercase;
+    font: 900 4rem 'Big Shoulders Display', sans-serif;
+    color: var(--white);
+}
+
+.our-location h2 {
+    text-transform: uppercase;
+    font: 900 2rem 'Big Shoulders Display', sans-serif;
+    color: var(--brown);
+    margin-bottom: 1.5625rem;
+}
+
+.our-location p {
+    font-family: 'Outfit', sans-serif;
+    color: var(--white);
+    font-size: 1.125rem;
+}
+
+.address {
+    margin-bottom: 1.25rem;
+}
+
+.footer-location {
+    padding: 5% 10%;
+    display: flex;
+    justify-content: space-between;
+    gap: 12.5rem;
+    align-items: center;
+    background: var(--brown);
+}
+
+.footer-location p {
+    color: var(--black);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+}
+
+.social-medias-location {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.social-medias-location a {
+    font-size: 1.3rem;
+    transition: 0.3s;
+}
+
+.social-medias-location a:hover {
+    color: var(--white);
+}
